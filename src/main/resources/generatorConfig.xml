@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<!-- <classPathEntry location="mysql-connector-java-5.1.26-bin.jar" /> -->
+
+	<context id="mysql_context" targetRuntime="MyBatis3">
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/ytaoer?autoReconnect=true&amp;characterEncoding=UTF-8"
+			userId="spider" password="spider" />
+		<javaModelGenerator targetPackage="com.ytaoer.mybatis.vo"
+			targetProject="ytaoer/src/main/java" />
+		<sqlMapGenerator targetPackage="com.ytaoer.mybatis.mapper"
+			targetProject="ytaoer/src/main/java" />
+		<javaClientGenerator targetPackage="com.ytaoer.mybatis.client"
+			targetProject="ytaoer/src/main/java" type="XMLMAPPER" />
+
+		<!-- 全国月度年度季度数据 -->
+		<!-- 月度 -->
+		<table schema="ytaoer" tableName="new_quotas" domainObjectName="NewQuotas">
+		</table>
+
+
+	</context>
+
+</generatorConfiguration>
