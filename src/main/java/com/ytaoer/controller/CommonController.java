@@ -9,11 +9,13 @@ import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 public class CommonController {
 
 	protected String objectToJson(Object obj) {
-		Gson gson = new Gson();
+		Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd")
+				.create();
 		return gson.toJson(obj);
 	}
 	/**

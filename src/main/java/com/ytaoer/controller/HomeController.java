@@ -15,9 +15,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
 import com.ytaoer.mybatis.vo.Article;
 import com.ytaoer.mybatis.vo.Category;
 import com.ytaoer.service.ArticleService;
@@ -66,9 +63,10 @@ public class HomeController extends CommonController {
 		model.addAttribute("articles", articles);
 		return "/jsp/index";
 	}
-	
+
 	/***
-	 *  手机版页面
+	 * 手机版页面
+	 * 
 	 * @param response
 	 * @param session
 	 * @param model
@@ -102,19 +100,18 @@ public class HomeController extends CommonController {
 		map.put("pageNo", pageNo);
 		map.put("pageCount", pageCount);
 		map.put("articles", articles);
-		Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd")
-				.create();
-		String jsonstr = gson.toJson(map);
 		try {
-			response.getWriter().write(jsonstr);
+			responseJson(response, map);
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
-	
+
 	/***
-	 *  手机版页面
+	 * 手机版页面
+	 * 
 	 * @param response
 	 * @param session
 	 * @param model
@@ -128,15 +125,12 @@ public class HomeController extends CommonController {
 		List<Article> articles = articleService.readArticleByKeyword(keyword);
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("articles", articles);
-		Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd")
-				.create();
-		String jsonstr = gson.toJson(map);
 		try {
-			response.getWriter().write(jsonstr);
+			responseJson(response, map);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
-	
+
 }
