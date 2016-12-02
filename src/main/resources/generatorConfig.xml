@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration>
-	<!-- <classPathEntry location="mysql-connector-java-5.1.26-bin.jar" /> -->
+	 <classPathEntry location="E:/webWorkspace2015/ytaoer/mysql-connector-java-5.1.21.jar" />
 
 	<context id="mysql_context" targetRuntime="MyBatis3">
 
@@ -17,8 +17,29 @@
 
 		<!-- 全国月度年度季度数据 -->
 		<!-- 月度 -->
-		<table schema="ytaoer" tableName="new_quotas" domainObjectName="NewQuotas">
+		<table schema="ytaoer" tableName="tag" domainObjectName="Tag">
+			<generatedKey column="id" sqlStatement="SELECT LAST_INSERT_ID()"
+				identity="true" type="post" />
 		</table>
+		<table schema="ytaoer" tableName="tag_article" domainObjectName="TagArticle">
+			<generatedKey column="id" sqlStatement="SELECT LAST_INSERT_ID()"
+				identity="true" type="post" />
+		</table>
+		<table schema="ytaoer" tableName="category" domainObjectName="Category">
+			<generatedKey column="id" sqlStatement="SELECT LAST_INSERT_ID()"
+				identity="true" type="post" />
+		</table>
+		<table schema="ytaoer" tableName="category_article" domainObjectName="CategoryArticle">
+			<generatedKey column="id" sqlStatement="SELECT LAST_INSERT_ID()"
+				identity="true" type="post" />
+		</table>
+		<table schema="ytaoer" tableName="article" domainObjectName="Article">
+			<generatedKey column="id" sqlStatement="SELECT LAST_INSERT_ID()"
+				identity="true" type="post" />
+		</table>
+		<table schema="ytaoer" tableName="articleText" domainObjectName="ArticleText">
+		</table>
+		
 
 
 	</context>

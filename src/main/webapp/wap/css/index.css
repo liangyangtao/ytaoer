@@ -1,0 +1,282 @@
+.container {
+	position: relative;
+	margin: 0 auto;
+}
+
+.box {
+	width: 100%;
+}
+
+.box_top {
+	display: -webkit-box;
+	display: -webkit-flex;
+	background: #00a8d6;
+	font-size: 0.34rem;
+	color: #fff;
+	line-height: 0.6rem;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+}
+
+.boxtop_left {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+}
+
+.boxtop_left .boximg {
+	display: block;
+	width: 0.54rem;
+	height: 0.54rem;
+}
+
+.boxtop_center {
+	-webkit-box-flex: 2;
+	-webkit-flex: 2;
+	/*  background: #22ff22;*/
+	display: -webkit-box;
+	display: -webkit-flex;
+}
+
+.boxtitle {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	text-align: center;
+	font-weight: bold;
+}
+/*.boxtitle .box_title{
+    font-size:0.36rem;
+}*/
+.boxtop_right {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	line-height: 1;
+	/*    background: #ff210b;*/
+	text-align: right;
+}
+/*�ֲ�ͼ*/
+.swiperbox {
+	width: 100%;
+	height: 400px;
+}
+
+.swiper-container img {
+	width: 100%;
+	height: auto;
+}
+/*
+<!--����-->*/
+.artbox {
+	display: -webkit-box;
+	display: -webkit-flex;
+}
+
+.artile {
+	display: -webkit-box;
+	display: -webkit-flex;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex-direction: column;
+	padding: 0.1rem;
+	/*   background:red;*/
+	/*-webkit-box-align:center;
+    -webkit-align-items: center;*/
+}
+
+.artile_box {
+	display: -webkit-box;
+	display: -webkit-flex;
+	border-bottom: 0.01rem solid #ccc;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	padding: 0.05rem;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+}
+
+.artilebox_left {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	background: #22ff22;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+}
+
+.artimg {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	text-align: right;
+}
+
+.artilebox_right {
+	display: -webkit-box;
+	display: -webkit-flex;
+	-webkit-box-flex: 2;
+	-webkit-flex: 2;
+	/*  background:green;*/
+	-webkit-box-orient: vertical;
+	flex-direction: column;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 0.5rem;
+}
+
+.atitle {
+	font-weight: bold;
+	font-size: 0.30rem;
+}
+
+.artilebox_title { /* -webkit-box-flex:1;
+     -webkit-flex:1;*/
+	/*   background: #ff210b;*/
+	font-size: 0.36rem;
+	font-weight: bold;
+	position: relative;
+}
+
+.passages {
+	font-color: #060706;
+	font-weight: normal;
+	font-size: 0.24rem;
+	overflow: hidden;
+}
+
+.artilebox_time { /*   -webkit-box-flex:1;
+    -webkit-flex:1;*/
+	/*  background: #060706;*/
+	/*text-align:right;*/
+	
+}
+
+.artmore {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	background: #ccc;
+	text-align: center;
+}
+
+.artcon {
+	display: -webkit-box;
+	display: -webkit-flex;
+	/*  background: #ff111d;*/
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.26rem;
+	font-weight: bold;
+}
+
+.artabout {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+}
+
+.arttitle {
+	font-size: 0.28rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.arttime {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	text-align: center;
+	/* background: #ff210b;*/
+}
+
+.arttimetitle {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	background: #cccccc;
+}
+
+.h11 {
+	font-size: 0.28rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.imgdiv img {
+	width: 100%;
+}
+
+.artol .lititle {
+	font-weight: bold;
+}
+
+.artol li p {
+	text-indent: 0.32rem;
+}
+
+.tixing {
+	text-indent: 0.32rem;
+	color: red;
+}
+
+.thankimg {
+	height: 1rem;
+}
+
+.mianze {
+	font-size: 0.32rem;
+}
+
+.fixedyt {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	width: 1rem;
+	position: fixed;
+	bottom: 2%;
+	right: 0;
+	z-index: 999;
+}
+
+.fixedyt a {
+	display: block;
+	padding: 0.1rem;
+}
+
+.kk {
+	display: block;
+	background: #ccc;
+	border-radius: 50%;
+	padding: 0.1rem;
+}
+
+.sear .form {
+	display: -webkit-box;
+	display: -webkit-flex;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	padding: 0.04rem 0;
+}
+
+.sear  .form .text1 {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	width: 100%;
+	border: 0;
+	font-size: 22px;
+}
+
+.sear  form .text1:focus {
+	border: 1px solid transparent;
+}
+
+.sear  form .btn {
+	padding: 0.2rem;
+	height: 0.86rem;
+	border: 0;
+	cursor: pointer;
+	background-color: #ccc;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.ablock {
+	display: block;
+}

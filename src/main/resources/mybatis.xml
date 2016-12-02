@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+<!DOCTYPE configuration   
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias alias="Article" type="com.ytaoer.mybatis.vo.Article" />
+		<typeAlias alias="ArticleText" type="com.ytaoer.mybatis.vo.ArticleText" />
+		<typeAlias alias="CategoryArticle" type="com.ytaoer.mybatis.vo.CategoryArticle" />
+		<typeAlias alias="Category" type="com.ytaoer.mybatis.vo.Category" />
+		<typeAlias alias="TagArticle" type="com.ytaoer.mybatis.vo.TagArticle" />
+		<typeAlias alias="Tag" type="com.ytaoer.mybatis.vo.Tag" />
+		<typeAlias alias="SQLAdapter" type="com.ytaoer.mybatis.vo.SQLAdapter" />
+	</typeAliases>
+	<!--数据源配置 这块用 BD2数据库 -->
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="jdbc" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost:3306/ytaoer" />
+				<property name="username" value="spider" />
+				<property name="password" value="spider" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<!--userMapper.xml装载进来 同等于把“dao”的实现装载进来 -->
+		<mapper resource="com/ytaoer/mybatis/mapper/SQLAdapterMapper.xml" />
+		<mapper resource="com/ytaoer/mybatis/mapper/ArticleMapper.xml" />
+		<mapper resource="com/ytaoer/mybatis/mapper/ArticleTextMapper.xml" />
+		<mapper resource="com/ytaoer/mybatis/mapper/CategoryArticleMapper.xml" />
+		<mapper resource="com/ytaoer/mybatis/mapper/CategoryMapper.xml" />
+		<mapper resource="com/ytaoer/mybatis/mapper/TagArticleMapper.xml" />
+		<mapper resource="com/ytaoer/mybatis/mapper/TagMapper.xml" />
+
+	</mappers>
+</configuration> 

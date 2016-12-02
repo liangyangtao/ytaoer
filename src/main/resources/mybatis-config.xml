@@ -5,11 +5,12 @@
 
 <configuration>
 	<mappers>
-		<mapper resource="com\ytaoer\mybatis\mapper\AreaMapper.xml" />
-	
-		
-		
-		
+		<mapper resource="com/ytaoer/mybatis/mapper/ArticleMapper.xml" />
+		<mapper resource="com/ytaoer/mybatis/mapper/ArticleTextMapper.xml" />
+		<mapper resource="com/ytaoer/mybatis/mapper/CategoryArticleMapper.xml" />
+		<mapper resource="com/ytaoer/mybatis/mapper/CategoryMapper.xml" />
+		<mapper resource="com/ytaoer/mybatis/mapper/TagArticleMapper.xml" />
+		<mapper resource="com/ytaoer/mybatis/mapper/TagMapper.xml" />
 	</mappers>
 
 </configuration>  
